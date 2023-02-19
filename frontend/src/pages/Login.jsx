@@ -9,7 +9,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import SignUp from "./pages/SignUp";
 
 const App = () => {
   return (
@@ -66,7 +65,7 @@ const App = () => {
             </Grid>
 
             <Grid item>
-              <Link href= "/SignUp"  variant="body2">
+              <Link href= "/register"  variant="body2">
                 Register
               </Link>
             </Grid>
