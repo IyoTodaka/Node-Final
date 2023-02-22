@@ -1,29 +1,24 @@
 {
   "name": "backend",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index",
+    "dev": "nodemon src/index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IyoTodaka/Node-Final.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/IyoTodaka/Node-Final/issues"
-  },
-  "homepage": "https://github.com/IyoTodaka/Node-Final#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0",
     "method-override": "^3.0.0",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.2",
+    "stripe": "^11.11.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
