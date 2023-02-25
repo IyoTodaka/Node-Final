@@ -74,7 +74,7 @@ function SimpleDialog(props) {
     onClose: PropTypes.func.isRequired,
     open: PropTypes.bool.isRequired,
     selectedValue: PropTypes.string.isRequired,
-  };
+  }; 
 
 const theme = createTheme();
 
