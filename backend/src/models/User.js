@@ -40,5 +40,6 @@ userSchema.pre("save", async function(next){
     next()
 })
 
+
 //この定義を他でも使いたい(server.jsでも使いたい)のでThreadという名前でexportする
 module.exports = mongoose.model("User" , userSchema);
