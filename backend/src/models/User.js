@@ -30,11 +30,15 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
 })
+
+//preの第一引数”save”とするとユーザー新規登録・更新の直前に第二引数の関数が走る
 userSchema.pre("save", async function(next){
     console.log("pre save");
+    //
     console.log(!this.isModified("password"));
     console.log("if抜けた");
     console.log(salt);
+    //入力されたPWをhash化する
     const hash = await bcrypt.hash(this.password, salt)
     this.password = hash
     next()
